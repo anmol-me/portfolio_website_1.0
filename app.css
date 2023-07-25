@@ -1,0 +1,127 @@
+body {
+    font-family: "EB Garamond";
+    margin: 0;
+    padding: 0;
+    background-color: rgb(40, 18, 40);
+    color: #fbfbfb;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 50vw;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #fbfbfb;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#header-circle {
+    top: -40px;
+    left: -90px;
+}
+
+#side-circle {
+    position: absolute;
+    /* top: 640px; */
+    right: -50px;
+    bottom: -100px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+header {
+    padding: 1rem 2rem;
+}
+
+header .left {
+    align-items: center;
+    font-weight: bold;
+}
+
+/* MAIN */
+
+main {
+    padding: 2rem;
+    width: 100%;
+    flex-grow: 1;
+    display: grid;
+    grid-template-areas: "a"
+    "b";
+}
+
+main .home-left {
+    grid-area: a;
+    font-size: 1rem;
+}
+
+#i {
+    display: inline;
+    font-size: 3.5rem;
+    line-height: 0;
+    font-family: 'Sacramento';
+    padding: 0;
+    margin: 0;
+}
+
+main .home-left .text {
+    font-size: 2rem;
+    max-width: 350px;
+    padding: 1.5rem 0;
+}
+
+main .home-right {
+    grid-area: b;
+}
+
+main .home-right #projects {
+    padding: 1rem 0;
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+main .home-right .openfeed {
+    font-size: 1.2rem;
+}
+
+main .home-right .openfeed a {
+    color: #fbfbfb;
+}
+
+footer {
+    padding: 2rem;
+    width: 100%;
+    margin: 0;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer li {
+    list-style: none;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+footer li a {
+    color: white;
+}
+
+footer li a:visited {
+    color: white;
+}
